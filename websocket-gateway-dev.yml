@@ -1,2 +1,2 @@
 config:
-    info: spring-cloud-dev.yml,version=4
+    info: spring-cloud-dev.yml, version=4, update=renoside
