@@ -1,2 +1,2 @@
 config:
-    info: spring-cloud-prod.yml,version=1
+    info: spring-cloud-prod.yml,version=2
