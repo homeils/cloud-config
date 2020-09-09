@@ -8,7 +8,7 @@ spring:
             - Path=/**
           filters:
             - PrefixPath=/ws
-            - name: TestConfig
+            - name: Websocket
 
 config:
   info: version=0
