@@ -9,3 +9,6 @@ spring:
           filters:
             - PrefixPath=/ws
             - name: Websocket
+
+config:
+  info: version=0
