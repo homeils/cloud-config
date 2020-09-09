@@ -1,8 +1,7 @@
 spring:
   cloud:
     gateway:
-      routes:
-        # 匹配websocket的路由
+      routes: 
         - id: route_websocket
           uri: ws://127.0.0.1:8080
           predicates:
