@@ -1,2 +1,20 @@
-config:
-    info: spring-cloud-dev.yml, version=0, update=renoside
+server:
+  port: 8088
+
+spring:
+  application:
+    name: websocket-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        # 匹配websocket的路由
+        - id: route_websocket
+          uri: ws://127.0.0.1:8080
+          predicates:
+            - Path=/**
+          filters:
+            - PrefixPath=/ws
+            - name: Websocket
