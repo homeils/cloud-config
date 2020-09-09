@@ -2,8 +2,6 @@ server:
   port: 8088
 
 spring:
-  application:
-    name: websocket-gateway
   cloud:
     gateway:
       discovery:
