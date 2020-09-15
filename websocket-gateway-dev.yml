@@ -1,14 +1,14 @@
-# spring:
-#   cloud:
-#     gateway:
-#       routes: 
-#         - id: route_websocket
-#           uri: ws://127.0.0.1:8080
-#           predicates:
-#             - Path=/**
-#           filters:
-#             - PrefixPath=/ws
-#             - name: Websocket
+spring:
+  cloud:
+    gateway:
+      routes: 
+        - id: route_websocket
+          uri: ws://127.0.0.1:8080
+          predicates:
+            - Path=/**
+          filters:
+            - PrefixPath=/ws
+            - name: Websocket
 
 config:
   info: version=0
