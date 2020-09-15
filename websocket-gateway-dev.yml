@@ -11,4 +11,4 @@ spring:
             - name: Websocket
 
 config:
-  info: version=0
+  info: version=1
