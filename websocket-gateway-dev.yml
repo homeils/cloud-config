@@ -2,14 +2,6 @@ spring:
   cloud:
     gateway:
       routes: 
-        - id: route_api
-          uri: http://test.promace.pcitc.com
-          predicates:
-            - Path=/cas/**
-          filters:
-            - StripPrefix=1
-            - RewritePath=/info, /portal
-            - name: CAS
         - id: route_websocket
           uri: ws://127.0.0.1:8080
           predicates:
