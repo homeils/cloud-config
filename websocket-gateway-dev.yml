@@ -5,7 +5,7 @@ spring:
         - id: route_cas
           uri: http://127.0.0.1:8088
           predicates:
-            - Path=/**
+            - Path=/info
           filters:
             - PrefixPath=/cas
 #             - name: Websocket
