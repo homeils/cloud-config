@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       routes: 
-        - id: route_cas
+        - id: route_ws
           uri: http://127.0.0.1:8080
           predicates:
             - Path=/**
