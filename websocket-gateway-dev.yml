@@ -3,12 +3,12 @@ spring:
     gateway:
       routes: 
         - id: route_cas
-          uri: http://127.0.0.1:8088
+          uri: http://127.0.0.1:8080
           predicates:
-            - Path=/info
+            - Path=/**
           filters:
-            - PrefixPath=/cas
-#             - name: Websocket
+            - PrefixPath=/ws
+            - name: Websocket
 
 config:
   info: version=1
